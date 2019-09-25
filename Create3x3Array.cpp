@@ -11,9 +11,9 @@ void showArray(const int[][NUM_COLS], int);
 // declares function showArray()
 void showArray(int const array[][NUM_COLS], int numRows)		//declares void type function that takes two arguments
 {
-	for (int row = 0; row < numRows; row++)						//loop counter for rows index
+	for (int row = 0; row < numRows; row++)				//loop counter for rows index
 	{
-		for (int col = 0; col < NUM_COLS; col++)				//loop counter for column index
+		for (int col = 0; col < NUM_COLS; col++)		//loop counter for column index
 		{
 			cout << setw(5) << array[row][col] << " ";
 		}
@@ -21,12 +21,12 @@ void showArray(int const array[][NUM_COLS], int numRows)		//declares void type f
 	}
 }
 
-//This is where the program starts.
+// Creatres 2D array with 3 rows & 3 columns. Values are initialized
 int main()
 {
-	int table[NUM_ROWS][NUM_COLS] = { 	{2, 1, 1},
-						{1, 1, 0},
-						{0, 1, 1} };  		// 2D array with 3 rows & 3 columns
+	int table[NUM_ROWS][NUM_COLS] ={{2, 1, 1},
+					{1, 1, 0},
+					{0, 1, 1} };  		
 	showArray(table, NUM_ROWS);
 
 	return 0;
